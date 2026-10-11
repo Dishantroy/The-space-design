@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SPACE DESIGN | Premium Furniture & Interiors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">THE SPACE <span>DESIGN.</span></a>
+
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#collections" class="nav-btn">Explore Furniture ↗</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">CRAFTED FOR YOUR LIFESTYLE</p>
+
+        <h1>Make Your Home<br>
+            <span>Beautifully Yours.</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover timeless furniture that combines elegant design,
+            exceptional comfort and lasting quality.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#collections" class="primary-btn">Explore Collection ↗</a>
+            <a href="#about" class="text-btn">Discover Our Story →</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>Premium</strong><small>Quality Materials</small></div>
+            <div><strong>Modern</strong><small>Elegant Designs</small></div>
+            <div><strong>Timeless</strong><small>Home Comfort</small></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+             alt="Elegant modern living room furniture">
+
+        <div class="image-label">
+            <span>01 / SIGNATURE COLLECTION</span>
+            <h3>Designed for Living.</h3>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+    <div>
+        <span>01</span>
+        <h3>Living Room</h3>
+        <p>Comfort meets sophistication.</p>
+    </div>
+
+    <div>
+        <span>02</span>
+        <h3>Bedroom</h3>
+        <p>Your personal space of peace.</p>
+    </div>
+
+    <div>
+        <span>03</span>
+        <h3>Dining</h3>
+        <p>Made for moments together.</p>
+    </div>
+
+    <div>
+        <span>04</span>
+        <h3>Home Decor</h3>
+        <p>Details that make a difference.</p>
+    </div>
+</section>
+
+<section class="collection section" id="collections">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">OUR CURATED SELECTION</p>
+            <h2>Furniture That <span>Inspires.</span></h2>
+        </div>
+        <p>Thoughtfully selected pieces to transform your house into a home.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85"
+                     alt="Modern designer sofa">
+                <span class="badge">BESTSELLER</span>
+            </div>
+            <div class="product-info">
+                <p class="product-category">LIVING ROOM</p>
+                <h3>Signature Comfort Sofa</h3>
+                <div class="product-bottom">
+                    <strong>₹24,999</strong>
+                    <button onclick="orderProduct('Signature Comfort Sofa')">Inquire ↗</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=85"
+                     alt="Luxury bedroom furniture">
+            </div>
+            <div class="product-info">
+                <p class="product-category">BEDROOM</p>
+                <h3>Modern Bedroom Collection</h3>
+                <div class="product-bottom">
+                    <strong>₹39,999</strong>
+                    <button onclick="orderProduct('Modern Bedroom Collection')">Inquire ↗</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=85"
+                     alt="Contemporary dining furniture">
+            </div>
+            <div class="product-info">
+                <p class="product-category">DINING</p>
+                <h3>Elegant Dining Table</h3>
+                <div class="product-bottom">
+                    <strong>₹18,499</strong>
+                    <button onclick="orderProduct('Elegant Dining Table')">Inquire ↗</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=800&q=85"
+                     alt="Premium wooden furniture">
+            </div>
+            <div class="product-info">
+                <p class="product-category">HOME OFFICE</p>
+                <h3>Designer Work Desk</h3>
+                <div class="product-bottom">
+                    <strong>₹12,999</strong>
+                    <button onclick="orderProduct('Designer Work Desk')">Inquire ↗</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="demo-note">
+        Demo product names and prices are illustrative and can be customized.
+    </p>
+</section>
+
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+             alt="Beautiful contemporary home interior">
+    </div>
+
+    <div class="about-content">
+        <p class="eyebrow">MORE THAN JUST FURNITURE</p>
+        <h2>Designed With Purpose.<br><span>Made for Living.</span></h2>
+
+        <p>
+            Great furniture does more than fill a room. It creates comfort,
+            reflects your personality and makes everyday moments special.
+        </p>
+
+        <p>
+            Explore thoughtfully designed pieces for modern homes,
+            from statement sofas to elegant dining tables and bedroom essentials.
+        </p>
+
+        <a href="#contact" class="primary-btn">Let's Talk About Your Space ↗</a>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <p class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</p>
+    <h2>Your Dream Home Starts <span>Here.</span></h2>
+
+    <p>
+        Looking for the perfect furniture for your space?
+        Get in touch with us to discuss your requirements.
+    </p>
+
+    <a class="primary-btn"
+       href="https://wa.me/919897686664?text=Hello%2C%20I%20am%20interested%20in%20your%20furniture%20collection."
+       target="_blank" rel="noopener">
+       Chat With Us on WhatsApp ↗
+    </a>
+
+    <p class="phone">Call / WhatsApp: +91 98976 86664</p>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">    <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+            THE SPACE <span>DESIGN.</span>
+        </a>
+
+        <p>
+            Transforming ordinary spaces into extraordinary experiences.
+            Thoughtfully designed interiors for beautiful living.
+        </p>
+
+        <a class="footer-contact"
+           href="https://wa.me/919897686664?text=Hello%2C%20I%20am%20interested%20in%20your%20interior%20design%20services."
+           target="_blank" rel="noopener">
+            Let's Talk About Your Space ↗
+        </a>
+    </div>
+
+    <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="#home">Home</a>
+        <a href="#collections">Our Projects</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+        <h3>Our Services</h3>
+        <a href="#collections">Interior Design</a>
+        <a href="#collections">Living Room Design</a>
+        <a href="#collections">Bedroom Interiors</a>
+        <a href="#collections">Home Styling</a>
+    </div>
+
+    <div class="footer-links footer-touch">
+        <h3>Get In Touch</h3>
+        <p>Have a space in mind? Let's create something beautiful.</p>
+
+        <a href="tel:+919897686664">
+            +91 98976 86664
+        </a>
+
+        <a href="https://wa.me/919897686664"
+           target="_blank" rel="noopener">
+            Chat on WhatsApp ↗
+        </a>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <p>© 2026 THE SPACE DESIGN. All Rights Reserved.</p>
+    <a href="#home">Back to Top ↑</a>
+</div>
+
+</footer><style>
+.site-footer {
+    background: #22251f;
+    color: #f7f5ef;
+    padding: 65px 7% 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.3fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    color: #c5a875;
+}
+
+.footer-brand > p,
+.footer-touch > p {
+    font-size: 12px;
+    line-height: 2;
+    color: #c1c2b9;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    display: inline-block;
+    background: #c5a875;
+    color: #22251f;
+    padding: 13px 17px;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-contact:hover {
+    background: #ffffff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-links h3 {
+    color: #c5a875;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #d5d5ce;
+    font-size: 11px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #c5a875;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff25;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    color: #c1c2b9;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #c5a875;
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .site-footer {
+        padding: 45px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        font-size: 21px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.8;
+    }
+}
+</style>
+<a class="whatsapp-float"
+   href="https://wa.me/919897686664?text=Hello%2C%20I%20am%20interested%20in%20your%20furniture."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+   WhatsApp ↗
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
